@@ -18,13 +18,13 @@ namespace GoT
 		{
 			base.ViewDidLoad ();
 
-			houseTab = new HouseViewController ();
+			houseTab = new UINavigationController(new HouseViewController ());
 			houseTab.Title = "Houses";
 
-			mapTab = new MapViewController ();
+			mapTab = new UINavigationController(new MapViewController ());
 			mapTab.Title = "Maps";
 
-			eventTab = new EventViewController ();
+			eventTab = new UINavigationController(new EventViewController ());
 			eventTab.Title = "Events";
 
 			var tabs = new UIViewController [] { mapTab, houseTab, eventTab };

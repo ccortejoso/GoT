@@ -26,7 +26,7 @@ namespace GoT
 			base.ViewDidLoad ();
 
 			characterDescriptionLabel.Text = character.description;
-			characterHouseLabel.Text = character.house;
+//			characterHouseLabel.Text = character.house;
 			characterNameLabel.Text = character.name;
 			//characterImageView = character.image;
 

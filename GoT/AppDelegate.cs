@@ -28,6 +28,8 @@ namespace GoT
 		//
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
+			msclient = new MobileServiceClient ("https://pruebacarlos.azure-mobile.net/", "MkymOrfOLkHbmSbvjCMsFWzuQDIuwK46");
+
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 			rootViewController = new TabBarController ();
@@ -37,7 +39,6 @@ namespace GoT
 			window.RootViewController = rootViewController;
 
 
-			msclient = new MobileServiceClient ("https://pruebacarlos.azure-mobile.net/", "MkymOrfOLkHbmSbvjCMsFWzuQDIuwK46");
 
 			// make the window visible
 

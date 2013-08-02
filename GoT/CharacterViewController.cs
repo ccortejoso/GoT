@@ -3,13 +3,14 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.Collections.Generic;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace GoT
 {
 	public partial class CharacterViewController : UIViewController
 
 	{
-
+		IMobileServiceTable<Character> characterTable = AppDelegate.msclient.GetTable<Character>();
 		House houseNames;
 
 		public CharacterViewController (House houses) : base ("CharacterViewController", null)
@@ -34,13 +35,15 @@ namespace GoT
 
 		}
 
-		public override void ViewDidLoad ()
-
+		public async override void ViewDidLoad ()
 		{
 
 			base.ViewDidLoad ();
 
-			CharacterTableView.Source = new CharacterSource (houseNames.houseCharacters, NavigationController);
+			var characters = await characterTable.Where (c => c.houseId == houseNames.id).ToListAsync();
+
+			CharacterTableView.Source = new CharacterSource (characters, NavigationController);
+			CharacterTableView.ReloadData ();
 
 		}
 

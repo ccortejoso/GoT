@@ -1,8 +1,10 @@
 using System;
 using MonoTouch.UIKit;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace GoT
 {
+	[DataTable(Name = "Characters")]
 	public class Character
 	{
 		public string name {
@@ -25,7 +27,12 @@ namespace GoT
 			set;
 		}
 
-		public string house {
+		public int houseId {
+			get;
+			set;
+		}
+
+		public int id {
 			get;
 			set;
 		}

@@ -1,0 +1,8 @@
+/Users/MBPViitru/Desktop/GoT/GoT/obj/iPhone/Debug/mtouch-cache/Link/monotouch.dll
+/Users/MBPViitru/Desktop/GoT/GoT/obj/iPhone/Debug/mtouch-cache/Link/System.dll
+/Users/MBPViitru/Desktop/GoT/GoT/obj/iPhone/Debug/mtouch-cache/Link/GoT.exe
+/Users/MBPViitru/Desktop/GoT/GoT/obj/iPhone/Debug/mtouch-cache/Link/System.Json.dll
+/Users/MBPViitru/Desktop/GoT/GoT/obj/iPhone/Debug/mtouch-cache/Link/System.Runtime.Serialization.dll
+/Users/MBPViitru/Desktop/GoT/GoT/obj/iPhone/Debug/mtouch-cache/Link/System.Core.dll
+/Users/MBPViitru/Desktop/GoT/GoT/obj/iPhone/Debug/mtouch-cache/Link/Microsoft.WindowsAzure.MobileServices.iOS.dll
+/Users/MBPViitru/Desktop/GoT/GoT/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll

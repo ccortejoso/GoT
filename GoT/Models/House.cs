@@ -25,6 +25,11 @@ namespace GoT
 			set;
 		}
 
+		public int id {
+			get;
+			set;
+		}
+
 		public House ()
 		{
 		}
